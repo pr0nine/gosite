@@ -9,6 +9,7 @@ import (
 
 func main()  {
 
+  // serves the files in the styles directory 
   http.Handle("/styles/", http.StripPrefix("/styles/", http.FileServer(http.Dir("styles/"))))
   http.HandleFunc("/", home)
   // server starts on port 80
