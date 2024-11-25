@@ -12,3 +12,7 @@ make sure the output file has executable permission,
 if not run $ `chmod +x gosite.exe`
 
 $ `./gosite.exe` to run gosite.
+
+change the html file with yours at `gosite/template/home.html`
+
+and css at `gosite/styles/styles.css`
