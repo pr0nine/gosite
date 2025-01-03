@@ -13,7 +13,7 @@ func main()  {
   http.Handle("/styles/", http.StripPrefix("/styles/", http.FileServer(http.Dir("styles/"))))
   http.HandleFunc("/", home)
   // server starts on port 80
-  err := http.ListenAndServe(":8080", nil)
+  err := http.ListenAndServe(":8084", nil)
   if err != nil {
     log.Fatal(err)
   }
